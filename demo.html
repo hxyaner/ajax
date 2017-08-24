@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+  <script type="text/javascript">
+     window.onload= function(){
+        var pic1 = document.getElementById('pic1')
+        var pic2 = document.getElementById('pic2')
+        var pic3 = document.getElementById('pic3')
+        var pic4 = document.getElementById('pic4')
+        var pic5 = document.getElementById('pic5')
+        var pic6 = document.getElementById('pic6')
+
+        var img =document.getElementById('img')
+        pic1.onclick= function(){
+            img.src="images/1.jpg"
+        } 
+        pic2.onclick= function(){
+            img.src="images/2.jpg"
+        }
+        pic3.onclick= function(){
+            img.src="images/3.jpg"
+        }
+        pic4.onclick= function(){
+            img.src="images/4.jpg"
+        }
+        pic5.onclick= function(){
+            img.src="images/5.jpg"
+        }
+        pic6.onclick= function(){
+            img.src="images/6.jpg"
+        }   
+
+
+
+     }
+
+   
+
+
+  </script>
+
+
+
+
+
+
+
+
+
+    <style>
+        * {margin: 0; padding:0;}
+        ul{list-style: none}
+        .slider {
+            width: 790px;
+            height: 340px;
+            border:1px solid #ccc;
+            margin: 100px auto;
+            padding: 5px;
+            position: relative;
+           
+        }
+        .slider ul {
+            position: absolute;
+            right: 10px;
+            bottom: 10px;
+        }
+        .slider ul li {
+            float: left;
+            width: 18px;
+            height: 18px;
+            background-color: #fff;
+            margin-right: 5px;
+            text-align: center;
+            line-height: 18px;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+<div class="slider">
+    <img id="img" src="images/1.jpg" alt=""/>
+    <ul>
+        <li id="pic1">1</li>
+        <li id="pic2">2</li>
+        <li id="pic3">3</li>
+        <li id="pic4">4</li>
+        <li id="pic5">5</li>
+        <li id="pic6">6</li>
+    </ul>
+</div>
+</body>
+</html>
